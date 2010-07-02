@@ -1,0 +1,14 @@
+%p
+  %b title:
+  =h @service.title
+
+%p
+  %b Description:
+  =h @service.description
+
+%p
+  %b Image url:
+  =h @service.image_url
+
+= link_to 'Edit', edit_service_path(@service)
+= link_to 'Back', services_path

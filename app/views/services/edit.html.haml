@@ -1,0 +1,22 @@
+%h1 Editing service
+
+- form_for(@service) do |f|
+  = f.error_messages
+
+  %p
+    = f.label :title
+    = f.text_field :title
+
+  %p
+    = f.label :description
+    = f.text_field :description
+  
+  %p
+    = f.label :image_url
+    = f.text_field :image_url
+
+  %p
+    = f.submit 'Update'
+
+= link_to 'Show', @service
+= link_to 'Back', services_path
