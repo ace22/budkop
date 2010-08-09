@@ -1,2 +1,21 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+var Application = {
+
+  setupTooltip: function() {
+    $('.tip').tooltip({
+      position: 'top center',
+      offset: [9, 0],
+      effect: 'fade',
+      opacity: 0.95,
+      tip: '.tooltip'
+    })
+  },
+
+  setup: function() {
+    this.setupTooltip()
+  }
+
+};
+
+$(function(){
+  Application.setup()
+});

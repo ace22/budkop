@@ -9,12 +9,50 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100702104117) do
+ActiveRecord::Schema.define(:version => 20100705150935) do
 
-  create_table "services", :force => true do |t|
-    t.string   "title"
-    t.string   "image_url"
+  create_table "contacts", :force => true do |t|
+    t.string   "name",       :null => false
+    t.string   "email",      :null => false
+    t.text     "message",    :null => false
+    t.string   "ip_address", :null => false
+    t.string   "browser",    :null => false
+    t.boolean  "email_sent"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "drones", :force => true do |t|
+    t.string   "login",             :null => false
+    t.string   "name",              :null => false
+    t.string   "surname",           :null => false
+    t.string   "email",             :null => false
     t.string   "description"
+    t.string   "crypted_password",  :null => false
+    t.string   "password_salt",     :null => false
+    t.string   "persistence_token", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "drones", ["login"], :name => "index_drones_on_login"
+  add_index "drones", ["persistence_token"], :name => "index_drones_on_persistence_token"
+
+  create_table "sessions", :force => true do |t|
+    t.string   "session_id", :null => false
+    t.text     "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
+  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "tags", :force => true do |t|
+    t.integer  "drone_id"
+    t.string   "name"
+    t.string   "url"
+    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

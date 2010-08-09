@@ -1,29 +1,31 @@
-source "http://rubygems.org"
+source 'http://rubygems.org'
 
-gem "rails", "2.3.8"
+gem 'rails', '3.0.0.beta4'
 
-gem "pg", "0.9.0"
-gem "capistrano", "2.5.19"
-gem "heroku", "1.9.11"
-# gem "nokogiri", "1.4.2"
-gem "haml", "3.0.13"
-gem 'authlogic', :git => "git://github.com/odorcicd/authlogic.git"
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# gem "rack", "1.1.0"
-# gem "clearance", "0.8.8"
-# gem "fastercsv", "1.5.3"
+gem 'pg', '0.9.0'
+gem 'haml', '3.0.13'
+gem 'gravtastic', '2.2.0'
+gem 'authlogic', :git => "git://github.com/odorcicd/authlogic.git", :branch => 'rails3'
+gem 'compass', '0.10.2'
+gem 'compass-960-plugin', '0.10.0.beta.0', :require => 'ninesixty'
+
+# Use unicorn as the web server
+# gem 'unicorn'
+
+# Deploy with Capistrano
+# gem 'capistrano'
+
+# Bundle the extra gems:
+# gem 'bj'
+# gem 'nokogiri', '1.4.1'
+# gem 'sqlite3-ruby', :require => 'sqlite3'
+# gem 'aws-s3', :require => 'aws/s3'
 
 group :test do
-  gem "rspec", "1.3.0"
-  gem "rspec-rails", "1.3.2"
-#  gem "faker", "0.3.1"
-#  gem "capybara", :git => "git://github.com/jnicklas/capybara.git"
-#  gem "cucumber", "0.8.3"
-#  gem "cucumber-rails", "0.3.2"
-  gem "autotest", "4.3.2"
-  gem "autotest-growl", "0.2.4"
-  gem "ZenTest", "4.3.2"
-#  gem "factory_girl", "1.3.1"
-#  gem "formtastic", "0.9.10"
+  gem 'ZenTest', '4.3.2'
+  gem 'rspec-rails', '2.0.0.beta.10'
+  gem 'autotest-growl', '0.2.4'
 end
-
