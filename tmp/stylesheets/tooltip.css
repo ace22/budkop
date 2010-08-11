@@ -1,0 +1,14 @@
+/* line 1, ../../app/stylesheets/tooltip.sass */
+.tooltip {
+  display: none;
+  background: transparent url(http://flowplayer.org/tools/img/tooltip/black_arrow.png);
+  font-size: 12px;
+  height: 70px;
+  width: 160px;
+  padding: 25px;
+  color: white;
+}
+/* line 9, ../../app/stylesheets/tooltip.sass */
+.tooltip p {
+  color: white;
+}

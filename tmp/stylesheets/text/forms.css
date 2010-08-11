@@ -1,0 +1,14 @@
+/* line 2, ../../../app/stylesheets/text/forms.sass */
+form .field_with_errors {
+  color: red;
+  display: inline;
+}
+
+/* line 6, ../../../app/stylesheets/text/forms.sass */
+#error_explanation {
+  color: red;
+}
+/* line 8, ../../../app/stylesheets/text/forms.sass */
+#error_explanation #reason {
+  font: bold 1em Arial;
+}

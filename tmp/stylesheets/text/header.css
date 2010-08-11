@@ -1,0 +1,22 @@
+/* line 2, ../../../app/stylesheets/text/header.sass */
+#header #name {
+  font: bold 3em Arial;
+  color: aaa;
+}
+/* line 6, ../../../app/stylesheets/text/header.sass */
+#header #menu ul {
+  list-style: none;
+  display: block;
+  margin: 0 10px;
+}
+/* line 10, ../../../app/stylesheets/text/header.sass */
+#header #menu ul li {
+  float: left;
+  margin: 0 1.5em;
+  font: bold 0.9em Arial;
+}
+/* line 14, ../../../app/stylesheets/text/header.sass */
+#header #motto {
+  font: 1em Arial;
+  color: ccc;
+}

@@ -2,10 +2,10 @@
 #   gem install sqlite3-ruby (not necessary on OS X Leopard)
 development:
   adapter: postgresql
-  database: doubledrones_development
+  database: budkop_development
   pool: 5
   timeout: 5000
-  username: doubledrones
+  username: budkop
   password:
 
 # Warning: The database defined as "test" will be erased and
@@ -13,16 +13,16 @@ development:
 # Do not set this db to the same as development or production.
 test:
   adapter: postgresql
-  database: doubledrones_test
+  database: budkop_test
   pool: 5
   timeout: 5000
-  username: doubledrones
+  username: budkop
   password:
 
 production:
   adapter: postgresql
-  database: doubledrones_production
+  database: budkop_production
   pool: 5
   timeout: 5000
-  username: doubledrones
+  username: budkop
   password:

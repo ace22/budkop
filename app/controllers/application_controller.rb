@@ -2,31 +2,31 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   layout 'application'
   helper :all
-  helper_method :current_drone_session, :current_drone
+  helper_method :current_worker_session, :current_worker
   filter_parameter_logging :password, :password_confirmation
 
   private
-    def current_drone_session
-      return @current_drone_session if defined?(@current_drone_session)
-      @current_drone_session = DroneSession.find
+    def current_worker_session
+      return @current_worker_session if defined?(@current_worker_session)
+      @current_worker_session = WorkerSession.find
     end
     
-    def current_drone
-      return @current_drone if defined?(@current_drone)
-      @current_drone = current_drone_session && current_drone_session.record
+    def current_worker
+      return @current_worker if defined?(@current_worker)
+      @current_worker = current_worker_session && current_worker_session.record
     end
     
-    def require_drone
-      unless current_drone
+    def require_worker
+      unless current_worker
         store_location
         flash[:notice] = "You must be logged in to access this page"
-        redirect_to new_drone_session_url
+        redirect_to new_worker_session_url
         return false
       end
     end
 
-    def require_no_drone
-      if current_drone
+    def require_no_worker
+      if current_worker
         store_location
         flash[:notice] = "You must be logged out to access this page"
         redirect_to account_url

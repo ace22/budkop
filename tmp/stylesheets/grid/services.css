@@ -1,0 +1,82 @@
+/*
+Syntax error: Undefined mixin 'grid-system'.
+        on line 2 of app/stylesheets/grid/services.sass, in `grid-system'
+        from line 2 of app/stylesheets/grid/services.sass
+
+1: #services
+2:   +grid-system(12)
+3:   +grid-container
+4:   #content
+5:     +grid(11)
+6:     +omega
+7:     #overview
+
+Backtrace:
+app/stylesheets/grid/services.sass:2:in `grid-system'
+app/stylesheets/grid/services.sass:2
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/mixin_node.rb:74:in `perform!'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/node.rb:301:in `_perform'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/node.rb:209:in `perform'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/node.rb:322:in `block in perform_children'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/node.rb:322:in `map'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/node.rb:322:in `perform_children'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/node.rb:313:in `perform!'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/rule_node.rb:191:in `perform!'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/node.rb:301:in `_perform'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/node.rb:209:in `perform'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/node.rb:322:in `block in perform_children'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/node.rb:322:in `map'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/node.rb:322:in `perform_children'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/node.rb:313:in `perform!'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/root_node.rb:59:in `perform!'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/node.rb:301:in `_perform'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/node.rb:209:in `perform'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/root_node.rb:37:in `perform'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/tree/root_node.rb:29:in `render'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/plugin.rb:221:in `update_stylesheet'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/plugin.rb:86:in `block (2 levels) in update_stylesheets'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/plugin.rb:79:in `each'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/plugin.rb:79:in `block in update_stylesheets'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/plugin.rb:77:in `each'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/plugin.rb:77:in `update_stylesheets'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/plugin.rb:51:in `check_for_updates'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/plugin/rack.rb:40:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/flash.rb:177:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/session/abstract_store.rb:106:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/cookies.rb:235:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:31:in `block in call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:11:in `cache'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:30:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:365:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:414:in `_run_call_callbacks'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/sendfile.rb:105:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/static.rb:33:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+/Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'grid-system'.\A         on line 2 of app/stylesheets/grid/services.sass, in `grid-system'\A         from line 2 of app/stylesheets/grid/services.sass\A \A 1: #services\A 2:   +grid-system(12)\A 3:   +grid-container\A 4:   #content\A 5:     +grid(11)\A 6:     +omega\A 7:     #overview"; }

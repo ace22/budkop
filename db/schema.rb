@@ -22,7 +22,26 @@ ActiveRecord::Schema.define(:version => 20100705150935) do
     t.datetime "updated_at"
   end
 
-  create_table "drones", :force => true do |t|
+  create_table "sessions", :force => true do |t|
+    t.string   "session_id", :null => false
+    t.text     "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
+  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "tags", :force => true do |t|
+    t.integer  "worker_id"
+    t.string   "name"
+    t.string   "url"
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "workers", :force => true do |t|
     t.string   "login",             :null => false
     t.string   "name",              :null => false
     t.string   "surname",           :null => false
@@ -35,26 +54,7 @@ ActiveRecord::Schema.define(:version => 20100705150935) do
     t.datetime "updated_at"
   end
 
-  add_index "drones", ["login"], :name => "index_drones_on_login"
-  add_index "drones", ["persistence_token"], :name => "index_drones_on_persistence_token"
-
-  create_table "sessions", :force => true do |t|
-    t.string   "session_id", :null => false
-    t.text     "data"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
-  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
-
-  create_table "tags", :force => true do |t|
-    t.integer  "drone_id"
-    t.string   "name"
-    t.string   "url"
-    t.string   "title"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+  add_index "workers", ["login"], :name => "index_workers_on_login"
+  add_index "workers", ["persistence_token"], :name => "index_workers_on_persistence_token"
 
 end

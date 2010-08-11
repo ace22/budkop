@@ -1,0 +1,18 @@
+%html
+  %head
+    %title Doubledrones.com
+    = stylesheet_link_tag 'grid.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'text.css', :media => 'screen, projection'
+    = stylesheet_link_tag "http://kernest.com/fonts/designation-bold-italic.css"
+    = javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'
+    = javascript_include_tag 'http://cdn.jquerytools.org/1.2.2/tiny/jquery.tools.min.js'
+    = javascript_include_tag 'application.js'
+    = csrf_meta_tag
+  %body
+    = render :partial => 'layouts/header'
+    .vertical_spacer
+
+    = yield
+
+    .vertical_spacer
+    = render :partial => 'layouts/footer'

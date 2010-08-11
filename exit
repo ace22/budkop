@@ -1,0 +1,548 @@
+commit c01d4f84b9118fafe5b5802ca20e3a83495a0736
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jul 5 18:54:29 2010 +0200
+
+    Clean up contact after successful submit.
+
+commit 0b6bda1c8be400d521b719cf5ac851adaa47e16f
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jul 5 18:47:29 2010 +0200
+
+    Remove unnecessary content.
+
+commit afbf5f569a5dad434ecb8a1f168efb32f2e57808
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jul 5 18:46:48 2010 +0200
+
+    Correct contact form label.
+
+commit 2f51593698ca44803480400cf56bde4f9bfa31d8
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jul 5 18:45:43 2010 +0200
+
+    Styling for error message when sending contact.
+    
+    Styling and placement.
+
+commit 16de1bab874488b56dabed5c825f9f42bb86a26c
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jul 5 18:34:02 2010 +0200
+
+    Add message has been sent notice.
+
+commit 24ba2f6bcbb5c2f0bb7889aeae5d54d8363c7f10
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jul 5 18:01:34 2010 +0200
+
+    Add initial message sending.
+
+commit 0cfb4ed4218831f1364fb4008c0ca4273b075886
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jul 5 17:01:37 2010 +0200
+
+    Correct email to better reflect intention.
+    
+    Note that both emails working now.
+
+commit cccd8e090d931b01ede4381fa52fe5c222c337f3
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jul 5 16:47:08 2010 +0200
+
+    Add region Europe to contact_us.
+
+commit b55af88eaf676ffc854648e6cbaa0f945d3cb1e4
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jul 5 16:45:50 2010 +0200
+
+    Add real phone number to contact_us section.
+
+commit bc2486d0cb3973299c08c8347571e81d619264aa
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jul 5 16:43:55 2010 +0200
+
+    File cleanup.
+
+commit 6b23e560548686ef3d744f0c53cc7d483b40d831
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jul 5 16:41:22 2010 +0200
+
+    Make technology page more eye-friendly.
+
+commit ab13e09ab217809229c0d163a1e3ec7b202e00c2
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jul 5 16:39:04 2010 +0200
+
+    Add opensource to technology sub page.
+
+commit 4eff112b5aead2ebd5ad4711bd90a00ceb87112c
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jul 5 16:12:31 2010 +0200
+
+    Add goozzik aka Jakub Gorzelak to drone pool.
+
+commit c8de693a96ced49032590cd24acfcea251853513
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jul 5 16:03:58 2010 +0200
+
+    Add two new practices to people sub page.
+
+commit a6bc30197d82e6f102e6ed22108b567b8dcaa1d1
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jul 5 16:02:06 2010 +0200
+
+    Disable home path for now as there is no content.
+    
+    WE need to disable it to show it to the people for freelance jobs.
+
+commit a4f33482a7e327c0a9f34d8e4e7ca0aa690ba92d
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 21:53:30 2010 +0200
+
+    Make tooltip more readable.
+
+commit 1ab76250b3bac30e3a832229fbc5e2b92244ccb4
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 21:50:44 2010 +0200
+
+    Initial styling for definition lists.
+
+commit 730b4d65506afd83ec720ff666ceb4f22bbe811d
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 21:46:12 2010 +0200
+
+    Initial paragraphs styling.
+
+commit dfb56d3d76895766609b5a678460718eae9399c2
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 21:42:40 2010 +0200
+
+    File cleanup.
+
+commit 31fe64853b9c8d800bdb18e0e87abb21787578e1
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 21:40:02 2010 +0200
+
+    Remove unnecessary styling.
+    
+    Due to default font size is 14px.
+
+commit d0088ed1d07e1721165ace963432a20d2a57fc59
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 21:39:05 2010 +0200
+
+    Add background for h13ronim in people sub page.
+    
+    Copied from ragnarson.com website.
+
+commit e587c5a2d546f24cf1b61e6847f27a0af23e98d9
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 21:33:35 2010 +0200
+
+    Add background for Pr0d1r2 on people sub page.
+
+commit 3369c23888f2a0b5d7b210f02b7bccd6c2b31f14
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 21:15:55 2010 +0200
+
+    Decrease menu font to 0.9em.
+    
+    After increasing default size to 14.
+
+commit 66a26c2d1089b9174170696414ac043d7cb18a1b
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 21:14:33 2010 +0200
+
+    Add defaults text stylesheet.
+
+commit f32927d60825e171db9428f0a61646926cf72cd5
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 21:08:10 2010 +0200
+
+    Finetune tooltip for better effect.
+
+commit 956267eff415a3eab1db26124c23e1d38f5037d4
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 21:02:36 2010 +0200
+
+    Add 28dni and jobmensa to involved in on people.
+    
+    For h13ronim and pr0d1r2 of course.
+    
+    Provide tooltip with short description.
+
+commit 9fe365d8ffa5b8c9fad6ac70a42d53f6a18fe94c
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 20:46:19 2010 +0200
+
+    Refactor footer to use all space available.
+
+commit ccfcf568d3fca84835c34b16e543ac99bd570a56
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 20:44:44 2010 +0200
+
+    Refactor content styling to use 11 grids.
+    
+    For better space usage.
+
+commit 7f715f2ae31de2a28aaa6bfe79d25dd83517fae8
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 20:38:46 2010 +0200
+
+    Fix technology sub page styling.
+
+commit 88a75f1a5903adc72ffb6002abef8ef7278d3599
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 20:26:26 2010 +0200
+
+    Add initial styling for lists.
+
+commit 902abad514fe241c69c16c931a22642ec5557e42
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 19:20:21 2010 +0200
+
+    Refactor stylesheets to distinguish grid from text
+
+commit 1abd3afb49a730ec1f4c2a897c489258edec873a
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 19:07:49 2010 +0200
+
+    Add inital header styling.
+
+commit 9323a84572df9a1af8df5124b90e0601b5649c07
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 18:43:39 2010 +0200
+
+    Make footer less distracting.
+
+commit ff06781e34f21ed485a5fd2182ff450107231357
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 18:38:56 2010 +0200
+
+    Change placement of drone content.
+    
+    To make space usage more efficent.
+
+commit 14e9118e8fa55cf36acceb903d7d4fa16cff56c8
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 18:37:59 2010 +0200
+
+    Make distinction between designation and code name
+
+commit 6f225639f4f6614e87862b135aa922e46fc521d1
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 18:23:49 2010 +0200
+
+    Add borg designations for unimatrix 01.
+
+commit 0c2cc1a3b4079759525d205aaca486fbecf392b9
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 18:18:52 2010 +0200
+
+    Correct learn new ones to reflect content style
+
+commit 90c135b1a8a0ff3d1e09de4ffff3a8c65d6ee373
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 18:16:15 2010 +0200
+
+    Add learn new ones to practices under people.
+
+commit 591186152c6d5faddc8241d9757f788947f4e756
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 18:11:12 2010 +0200
+
+    Add styling for name in upper-left corner.
+
+commit 03849788055da4a20a7f58d37f03b429e1f4ed93
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 18:07:47 2010 +0200
+
+    Add initial motto.
+
+commit eb9f45d594f1809e6cf0f411770f7fb2280802e9
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Sat Jul 3 17:54:55 2010 +0200
+
+    Replace logo with name with increased font size.
+
+commit 255468b69e0afaaa964f0cd2259121542ffdb96d
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Tue Jun 29 08:54:59 2010 +0200
+
+    Remove compiled css files.
+    
+    Note that now files will regenerate in tmp/stylesheets.
+    This allow us to use SASS regeneration on Heroku.
+
+commit 0bc36e19b190fb50e5391e0fb619361b04e1ac33
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Tue Jun 29 08:13:56 2010 +0200
+
+    Correct sentence syntax.
+
+commit 598727246e06f4312bcc270487550413354baf2a
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Tue Jun 29 08:12:44 2010 +0200
+
+    Add initial home sub page.
+    
+    And set it to start page.
+
+commit fa7e0b3ff2a95debdc2ef24de57a4ac9ed91b7b7
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Tue Jun 29 07:53:37 2010 +0200
+
+    Initial Contact us sub page.
+
+commit fc0247d86795a524779bd1d5eb0f369dabb55560
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Tue Jun 29 07:17:03 2010 +0200
+
+    Change styling to better distribute content.
+
+commit eb99c881cec8bebf09375eaea1fbb17c7f97000c
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Tue Jun 29 07:15:50 2010 +0200
+
+    Add another service named IT Consulting.
+
+commit 0ae854a349be9748ef7a1d6cd16c18652f436222
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Tue Jun 29 07:08:39 2010 +0200
+
+    Change service naming for better marketing
+    
+    As developing aplications for iPhone is based on web in many cases and
+    users does not need to know that. They just need perfect solutions.
+
+commit 735ba9768563f036bb2749d5281a1aaec2b857a5
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Tue Jun 29 07:07:03 2010 +0200
+
+    Initial People sub page.
+
+commit 0f0fe8c557ae0f6a3f5451253284805b9c885f7f
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Tue Jun 29 06:38:47 2010 +0200
+
+    Remove remainigns of welcome page.
+
+commit 1203fbd7cfb6f4c707653753ecdd0967bda4d043
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Tue Jun 29 06:35:54 2010 +0200
+
+    Introduce Technology sub page.
+    
+    Remove redundant welcome page.
+
+commit 07e6961947f590d9abeba457277accbfb0f78e0e
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Tue Jun 29 06:12:03 2010 +0200
+
+    Remove redundant styling.
+
+commit 8d3af85d4bc02a5fe536940a6e9ff5e053e6d68d
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Tue Jun 29 06:02:06 2010 +0200
+
+    Add link to services sub page.
+
+commit 93ed661a1f3e4b1f6e96044d48f2fc2ab85a14af
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Tue Jun 29 06:00:06 2010 +0200
+
+    Make descriptions more production-friendly
+
+commit b2af3475b651773d49432787270548a26b62265a
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Tue Jun 29 05:57:25 2010 +0200
+
+    Refactor views and sass to be more modular.
+
+commit faaf699a1e7cfe905ab18c9cd91ae945e115b8ee
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jun 28 20:11:47 2010 +0200
+
+    Add initial services page with content.
+    
+    You can access it at http://127.0.0.1:3000/services
+
+commit b588fbaa1e38c6d9a3d3f190412d60be0f55fcb1
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jun 28 11:50:09 2010 +0200
+
+    Add initial compass with 960.gs plugin.
+    
+    Note that 960 mixins were copied manually:
+    
+    cp -rvp
+    ~/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/gems/1.9/gems/compass-960-plugin-0.10.0.beta.0/stylesheets/960/
+    ~/projects/doubledrones.com/app/stylesheets/960/
+    cd app/stylesheets/960/
+    mv _grid.sass grid.sass
+    mv _text.sass text.sass
+
+commit 2c9b46308dd8de9422279076a3f97c87a2333d24
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jun 28 11:49:24 2010 +0200
+
+    Remove styling to actually see haml errors.
+
+commit df7a918e7bb728dd55a6ef1d775a3ee149e11168
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jun 28 11:45:57 2010 +0200
+
+    Remove styling to actually see haml errors.
+
+commit 1aa6dd3b695e661ef34365ff0641d1dcbd6ddaab
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jun 21 12:20:35 2010 +0200
+
+    Make drones listing view well unit-tested.
+
+commit a162bbc55cdc893b2820cce2ed6d73173bb968d4
+Merge: 060cea8 e717b85
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jun 21 11:39:52 2010 +0200
+
+    Merge branch 'master' of github.com:doubledrones/doubledrones.com
+
+commit 060cea812e049850ab6898f48d24412c3a51fba8
+Author: Marcin Nowicki <pr0d1r2@ragnarson.com>
+Date:   Mon Jun 21 11:39:00 2010 +0200
+
+    Remove syntax errors when running autotest.
+
+commit e717b85731a76244909c5307aadfe98f11f626d5
+Author: Marcin Michalowski <h13ronim@gmail.com>
+Date:   Sun Jun 20 15:18:48 2010 +0200
+
+    File cleanup
+
+commit 15d4e6cd8007476120e5ed9727080e26a8e46cf2
+Author: Marcin Michalowski <h13ronim@gmail.com>
+Date:   Sun Jun 20 15:18:28 2010 +0200
+
+    Center tag cloud
+
+commit 964039d3f2c07ba712476c56d8b6631cbf1d7454
+Author: Marcin Michalowski <h13ronim@gmail.com>
+Date:   Sun Jun 20 15:14:34 2010 +0200
+
+    File cleanup
+
+commit 106053567b41477476d77c7e5c0bc4170afef577
+Author: hash4di <hash4di@shinobi.local>
+Date:   Thu Jun 17 12:57:45 2010 +0200
+
+    #2 fixing destroy
+
+commit 699252a48a13337ad07ca90a8f259fa0d338c3ec
+Author: hash4di <hash4di@shinobi.local>
+Date:   Thu Jun 17 12:48:25 2010 +0200
+
+    fix destroy
+
+commit 5baa33b0feb687a706215406c0ca7d0decff37d3
+Author: hash4di <hash4di@shinobi.local>
+Date:   Thu Jun 17 12:31:08 2010 +0200
+
+    TAGS with each method for array object
+
+commit e49000d00a9f7bec0ea354a153b27aff39cc95ac
+Author: hash4di <hash4di@shinobi.local>
+Date:   Thu Jun 17 10:19:37 2010 +0200
+
+     welcome styling
+
+commit 5516a742af31fb5c94158f7f793cc2da4cd76ee1
+Author: hash4di <hash4di@shinobi.local>
+Date:   Tue Jun 15 09:18:11 2010 +0200
+
+    add initial tags db. script to import tags to cloud from db. rename
+    description to title in db.
+
+commit 4b0b9cda0318298a258069ed63741f44fb93aa80
+Author: hash4di <hash4di@hash4di.local>
+Date:   Sat Jun 12 10:53:08 2010 +0200
+
+    create tag model & db
+
+commit 3d4db71f7b9746a95016b92affc938c2547570d0
+Author: hash4di <hash4di@hash4di.local>
+Date:   Sat Jun 12 10:51:26 2010 +0200
+
+    login panel in /drone
+
+commit e7519898d4ddc5e603b1da5c8b03d62478c5b89e
+Author: hash4di <hash4di@hash4di.local>
+Date:   Sat Jun 12 09:03:43 2010 +0200
+
+    logout works!
+
+commit 472243fb4e33427bd5559561f775ec0a71775263
+Author: hash4di <hash4di@hash4di.local>
+Date:   Sat Jun 12 08:42:30 2010 +0200
+
+    change nickname to login in db & project
+
+commit d0fcf509cbb0e67a5332888fd449422d06d551e2
+Author: hash4di <hash4di@hash4di.local>
+Date:   Sat Jun 12 08:41:12 2010 +0200
+
+    create green flash notice when login/logout
+
+commit 84df69fb7ff82b9c92d26b109ef4c09a545258fd
+Author: hash4di <hash4di@hash4di.local>
+Date:   Sat Jun 12 08:39:42 2010 +0200
+
+    db for loged drone sessions
+
+commit 918cc0a9dcd1f008db3bbd7842f0523ab624e1a9
+Author: hash4di <hash4di@hash4di.local>
+Date:   Sat Jun 12 07:15:22 2010 +0200
+
+    delete modifying buttons: "edit, new, delete" from drone list view.
+
+commit 39f405e2f4e13930006d7526ed12e71ea7ab521a
+Author: hash4di <hash4di@hash4di.local>
+Date:   Sat Jun 12 07:11:47 2010 +0200
+
+    working drones db with edit view and drone_session for different drone.
+    OBWR!
+
+commit d1880b0f3882fd3a2603f134c9bab694ccdb199a
+Author: hash4di <hash4di@hash4di.local>
+Date:   Sat Jun 12 07:08:45 2010 +0200
+
+    change 'authlogic' gem to rails3 dedicated branch
+
+commit 97714a0fc9d0c1e24758432f7fd42ee1b46afcb1
+Author: hash4di <hash4di@hash4di.local>
+Date:   Wed Jun 9 11:11:12 2010 +0200
+
+    errors and trash - wrong code trial and error method
+
+commit 1093be1c7d7faebbce82278e0f75cd39da24c9cd
+Author: hash4di <hash4di@hash4di.local>
+Date:   Wed Jun 9 11:05:24 2010 +0200
+
+    create user panel to management crew informations. based on Rails 3 scaffold
+    generator with haml upgrade.
+
+commit 8480ac8a673a7e3428b695eafd886f027d201375
+Author: hash4di <hash4di@hash4di.local>
+Date:   Wed Jun 9 06:09:07 2010 +0200
+
+    "People" column with gem gravtastic to auto-import avatars from gravatar.com site
+
+commit 2fbeeb3ca631c915a8dacbeec3ec6e549ae1c000
+Author: hash4di <hash4di@hash4di.local>
+Date:   Wed Jun 9 06:03:13 2010 +0200
+
+    add new "gravtastic" gem
+
+commit 406a395ee153d5ca194f4c537395e62338780c36
+Author: hash4di <hash4di@hash4di.local>
+Date:   Wed Jun 9 06:01:31 2010 +0200
+
+    change tooltip background image

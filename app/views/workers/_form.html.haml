@@ -1,0 +1,40 @@
+- form_for(@drone) do |f|
+  - if @drone.errors.any?
+    #errorExplanation
+      %h2= "#{pluralize(@drone.errors.count, "error")} prohibited this drone from being saved:"
+      %ul
+        - @drone.errors.full_messages.each do |msg|
+          %li= msg
+
+  #field
+    = f.label :login
+    = f.text_field :login
+
+  #field
+    = f.label :name
+    = f.text_field :name
+
+  #field
+    = f.label :surname
+    = f.text_field :surname
+
+  #field
+    = f.label :email
+    = f.text_field :email
+
+  #field
+    = f.label :description
+    = f.text_field :description
+
+
+  #field
+    = f.label :password
+    = f.password_field :password
+
+  #field
+    = f.label :password_confirmation
+    = f.password_field :password_confirmation
+
+  #actions
+    = f.submit "Confirm"
+

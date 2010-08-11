@@ -1,0 +1,275 @@
+/* 960 Grid System ~ Text CSS.
+ * Learn more ~ http://960.gs/
+ * *
+ * Licensed under GPL and MIT. */
+/* line 4, ../../app/stylesheets/960/text.sass */
+body {
+  font: 13px/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif;
+}
+
+/* line 6, ../../app/stylesheets/960/text.sass */
+a:focus {
+  outline: 1px dotted invert;
+}
+
+/* line 8, ../../app/stylesheets/960/text.sass */
+hr {
+  border-color: #cccccc;
+  border-style: solid;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0;
+}
+
+/* line 14, ../../app/stylesheets/960/text.sass */
+h1 {
+  font-size: 25px;
+}
+
+/* line 16, ../../app/stylesheets/960/text.sass */
+h2 {
+  font-size: 23px;
+}
+
+/* line 18, ../../app/stylesheets/960/text.sass */
+h3 {
+  font-size: 21px;
+}
+
+/* line 20, ../../app/stylesheets/960/text.sass */
+h4 {
+  font-size: 19px;
+}
+
+/* line 22, ../../app/stylesheets/960/text.sass */
+h5 {
+  font-size: 17px;
+}
+
+/* line 24, ../../app/stylesheets/960/text.sass */
+h6 {
+  font-size: 15px;
+}
+
+/* line 26, ../../app/stylesheets/960/text.sass */
+ol {
+  list-style: decimal;
+}
+
+/* line 28, ../../app/stylesheets/960/text.sass */
+ul {
+  list-style: square;
+}
+
+/* line 30, ../../app/stylesheets/960/text.sass */
+li {
+  margin-left: 30px;
+}
+
+/* line 32, ../../app/stylesheets/960/text.sass */
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+  margin-bottom: 20px;
+}
+
+/* line 1, ../../app/stylesheets/text/defaults.sass */
+body {
+  font-size: 14px;
+}
+
+/* line 1, ../../app/stylesheets/text/headers.sass */
+h2 {
+  color: 999;
+}
+
+/* line 3, ../../app/stylesheets/text/headers.sass */
+h3 {
+  color: 777;
+}
+
+/* line 5, ../../app/stylesheets/text/headers.sass */
+h4 {
+  color: 0;
+}
+
+/* line 1, ../../app/stylesheets/text/paragraphs.sass */
+p {
+  color: 777;
+}
+
+/* line 2, ../../app/stylesheets/text/lists.sass */
+ul li {
+  line-height: 1.6;
+  margin: 0px 0px 2px;
+  padding: 0px 0px 0px 14px;
+}
+
+/* line 7, ../../app/stylesheets/text/lists.sass */
+dl dt {
+  font: bold 1em Arial;
+}
+/* line 9, ../../app/stylesheets/text/lists.sass */
+dl dd {
+  color: 777;
+}
+
+/* line 2, ../../app/stylesheets/text/forms.sass */
+form .field_with_errors {
+  color: red;
+  display: inline;
+}
+
+/* line 6, ../../app/stylesheets/text/forms.sass */
+#error_explanation {
+  color: red;
+}
+/* line 8, ../../app/stylesheets/text/forms.sass */
+#error_explanation #reason {
+  font: bold 1em Arial;
+}
+
+/* line 2, ../../app/stylesheets/text/header.sass */
+#header #name {
+  font: bold 3em Arial;
+  color: aaa;
+}
+/* line 6, ../../app/stylesheets/text/header.sass */
+#header #menu ul {
+  list-style: none;
+  display: block;
+  margin: 0 10px;
+}
+/* line 10, ../../app/stylesheets/text/header.sass */
+#header #menu ul li {
+  float: left;
+  margin: 0 1.5em;
+  font: bold 0.9em Arial;
+}
+/* line 14, ../../app/stylesheets/text/header.sass */
+#header #motto {
+  font: 1em Arial;
+  color: ccc;
+}
+
+/* line 1, ../../app/stylesheets/text/footer.sass */
+#footer {
+  font: 1em Arial;
+  color: bbb;
+}
+
+/* line 3, ../../app/stylesheets/text/technology.sass */
+#technology #content #tag_cloud {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* line 9, ../../app/stylesheets/text/technology.sass */
+#technology #content #tag_cloud .tag {
+  background-color: #9ab9e4;
+  font-family: monospace;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2px 4px;
+  color: #eeeeff;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.2) 2px 0, rgba(0, 0, 0, 0.2) 0 2px, rgba(255, 255, 255, 0.2) -2px 0, rgba(255, 255, 255, 0.2) 0 -2px, rgba(0, 0, 0, 0.2) 2px 2px, rgba(255, 255, 255, 0.2) -2px -2px;
+  -moz-text-shadow: rgba(0, 0, 0, 0.2) 2px 0, rgba(0, 0, 0, 0.2) 0 2px, rgba(255, 255, 255, 0.2) -2px 0, rgba(255, 255, 255, 0.2) 0 -2px, rgba(0, 0, 0, 0.2) 2px 2px, rgba(255, 255, 255, 0.2) -2px -2px;
+  -o-text-shadow: rgba(0, 0, 0, 0.2) 2px 0, rgba(0, 0, 0, 0.2) 0 2px, rgba(255, 255, 255, 0.2) -2px 0, rgba(255, 255, 255, 0.2) 0 -2px, rgba(0, 0, 0, 0.2) 2px 2px, rgba(255, 255, 255, 0.2) -2px -2px;
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 0, rgba(0, 0, 0, 0.2) 0 2px, rgba(255, 255, 255, 0.2) -2px 0, rgba(255, 255, 255, 0.2) 0 -2px, rgba(0, 0, 0, 0.2) 2px 2px, rgba(255, 255, 255, 0.2) -2px -2px;
+  /* Shadow under tag */
+  -webkit-box-shadow: 0 0 10px black;
+  -moz-box-shadow: 0 0 10px black;
+  -o-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
+  /* Rotation transformation */
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  /* Transition between this and :hover state */
+  -webkit-transition: -webkit-transform 0.1s ease-in;
+  -moz-transition: -moz-transform 0.1s ease-in;
+  -o-transition: -o-transform 0.1s ease-in;
+  transition: transform 0.1s ease-in;
+}
+/* line 41, ../../app/stylesheets/text/technology.sass */
+#technology #content #tag_cloud .tag:hover {
+  color: white;
+  background-color: #3e6cf5;
+  z-index: 10000;
+  -webkit-box-shadow: 0 0 20px #000064;
+  -moz-box-shadow: 0 0 20px #000064;
+  -o-box-shadow: 0 0 20px #000064;
+  box-shadow: 0 0 10px #000064;
+  -webkit-transform: rotate(3deg) scale(1.2);
+  -moz-transform: rotate(3deg) scale(1.2);
+  -o-transform: rotate(3deg) scale(1.2);
+  transform: rotate(3deg) scale(1.2);
+}
+/* line 57, ../../app/stylesheets/text/technology.sass */
+#technology #content #tag_cloud .tag:nth-child(2n) {
+  background-color: #8ab9e4;
+  font-size: 17px;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+/* line 67, ../../app/stylesheets/text/technology.sass */
+#technology #content #tag_cloud .tag:nth-child(4n) {
+  background-color: #9ab9e4;
+  font-size: 15px;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+/* line 76, ../../app/stylesheets/text/technology.sass */
+#technology #content #tag_cloud .tag:nth-child(5n) {
+  background-color: #9ab9d4;
+  font-size: 18px;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+/* line 86, ../../app/stylesheets/text/technology.sass */
+#technology #content #tag_cloud .tag:nth-child(2n):hover {
+  -webkit-transform: rotate(-3deg) scale(1.2);
+  -moz-transform: rotate(-3deg) scale(1.2);
+  -o-transform: rotate(-3deg) scale(1.2);
+  transform: rotate(-3deg) scale(1.2);
+}
+/* line 93, ../../app/stylesheets/text/technology.sass */
+#technology #content #tag_cloud .tag:nth-child(4n):hover {
+  -webkit-transform: rotate(3deg) scale(1.2);
+  -moz-transform: rotate(3deg) scale(1.2);
+  -o-transform: rotate(3deg) scale(1.2);
+  transform: rotate(3deg) scale(1.2);
+}
+/* line 100, ../../app/stylesheets/text/technology.sass */
+#technology #content #tag_cloud .tag:nth-child(5n):hover {
+  -webkit-transform: rotate(2deg) scale(1.2);
+  -moz-transform: rotate(2deg) scale(1.2);
+  -o-transform: rotate(2deg) scale(1.2);
+  transform: rotate(2deg) scale(1.2);
+}
+
+/* line 2, ../../app/stylesheets/text/contact_us.sass */
+#contact_us #message_sent {
+  color: green;
+}

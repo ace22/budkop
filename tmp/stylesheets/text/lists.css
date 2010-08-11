@@ -1,0 +1,15 @@
+/* line 2, ../../../app/stylesheets/text/lists.sass */
+ul li {
+  line-height: 1.6;
+  margin: 0px 0px 2px;
+  padding: 0px 0px 0px 14px;
+}
+
+/* line 7, ../../../app/stylesheets/text/lists.sass */
+dl dt {
+  font: bold 1em Arial;
+}
+/* line 9, ../../../app/stylesheets/text/lists.sass */
+dl dd {
+  color: 777;
+}

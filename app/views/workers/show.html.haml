@@ -1,0 +1,22 @@
+- if !current_drone
+  = link_to "Log In", new_drone_session_path
+- else
+  = button_to "Logout", drone_session_path, :method => :delete
+%p.notice= notice 
+%p
+  %b Login:
+  = @drone.login
+%p
+  %b Name:
+  = @drone.name
+%p
+  %b Surname:
+  = @drone.surname
+%p
+  %b Email:
+  = @drone.email
+%p
+  %b Description:
+  = @drone.description
+= link_to 'Edit', edit_drone_path |
+

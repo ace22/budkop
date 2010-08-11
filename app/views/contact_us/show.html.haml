@@ -1,0 +1,47 @@
+#contact_us
+  - if @message_sent
+    #message_sent Your message has been sent. We will soon answer to your e-mail.
+    .clear
+  #content
+    %h2 Contact us
+    %h3
+      We are waiting for you to challenge us with your needs.
+      Meet us in private and present your ideas. Then let the forging begin.
+    #oridinary
+      %h4 Location
+      #zip_with_city 42-200 Częstochowa
+      #address Łódzka 8/12
+      #country Poland
+      #region Europe
+      %h4 Phones
+      #phone_first +48 662 02 00 55
+      %h4 Emails
+      #email_development development@doubledrones.com
+      #email_consulting consulting@doubledrones.com
+    #online_form
+      %h4 Online contact form
+      #description Fill this form if you have a quick question or if you want a free quote from us.
+      - if @contact.errors.any?
+        .spacer
+        #error_explanation
+          #reason
+            You cannot sent this message due to:
+          %ul
+            - @contact.errors.full_messages.each do |msg|
+              %li= msg
+      - form_for(@contact) do |f|
+        .text
+          = f.label(:name, 'Your Name')
+          = f.text_field(:name)
+          = f.error_message_on(:name)
+        .text
+          = f.label(:email, 'Your Email')
+          = f.text_field(:email)
+          = f.error_message_on(:email)
+        .textarea
+          = f.label(:message, 'Message')
+          = f.text_area(:message)
+          = f.error_message_on(:message)
+        .submit
+          = submit_tag('Send now')
+  .clear

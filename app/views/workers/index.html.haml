@@ -1,0 +1,18 @@
+%h1 Listing drones
+
+%table
+  %tr
+    %th Nickname
+    %th Name
+    %th Surname
+    %th Email
+    %th Description
+
+  - @drones.each do |drone|
+    %tr
+      %td= drone.nickname
+      %td= drone.name
+      %td= drone.surname
+      %td= drone.email
+      %td= drone.description
+
