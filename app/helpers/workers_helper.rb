@@ -1,2 +1,2 @@
-module DronesHelper
+module WorkersHelper
 end

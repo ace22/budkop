@@ -5001,3 +5001,1801 @@ Migrating to CreateContacts (20100705150935)
  FROM pg_attribute a
  WHERE a.attrelid = 25341
  AND a.attnum IN (9)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 11:39:34 +0200
+
+PGError (FATAL:  database "budkop_development" does not exist
+):
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `initialize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `new'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `connect'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/postgresql_adapter.rb:219:in `initialize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/postgresql_adapter.rb:25:in `new'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/postgresql_adapter.rb:25:in `postgresql_connection'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:226:in `new_connection'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:248:in `checkout_new_connection'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:190:in `block (2 levels) in checkout'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:186:in `loop'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:186:in `block in checkout'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:185:in `checkout'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:99:in `connection'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:330:in `retrieve_connection'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_specification.rb:103:in `retrieve_connection'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_specification.rb:95:in `connection'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:11:in `cache'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:365:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:414:in `_run_call_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/sendfile.rb:105:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/static.rb:33:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 11:41:29 +0200
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (83.3ms)[0m  [1mSET time zone 'UTC'[0m
+
+LoadError (Expected /Users/hash4di/projects/budkop/app/helpers/worker_session_helper.rb to define WorkerSessionHelper):
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:456:in `load_missing_constant'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:114:in `block in constantize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:113:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:113:in `constantize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/core_ext/string/conversions.rb:59:in `constantize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/helpers.rb:132:in `block in modules_for_helpers'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/helpers.rb:127:in `map!'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/helpers.rb:127:in `modules_for_helpers'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/helpers.rb:100:in `modules_for_helpers'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/helpers.rb:91:in `helper'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/base.rb:63:in `inherited'
+  /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:1:in `<top (required)>'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:418:in `load'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:418:in `block in load_file'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:554:in `new_constants_in'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:417:in `load_file'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:313:in `require_or_load'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:455:in `load_missing_constant'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/hash4di/projects/budkop/app/controllers/people_controller.rb:1:in `<top (required)>'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:418:in `load'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:418:in `block in load_file'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:554:in `new_constants_in'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:417:in `load_file'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:313:in `require_or_load'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:455:in `load_missing_constant'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:114:in `block in constantize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:113:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:113:in `constantize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:487:in `block in <class:Reference>'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:497:in `yield'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:497:in `default'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:497:in `get'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:44:in `controller'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:23:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:148:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:89:in `block in recognize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:94:in `optimized_each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:88:in `recognize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:139:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:457:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/plugin/rack.rb:41:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/head.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/flash.rb:177:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/session/abstract_store.rb:106:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/cookies.rb:235:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:31:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:11:in `cache'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:365:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:414:in `_run_call_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/sendfile.rb:105:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/static.rb:33:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 11:42:39 +0200
+  [1m[35mSQL (0.6ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.2ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.2ms)[0m  [1mSET client_min_messages TO 'notice'[0m
+  [1m[35mSQL (47.1ms)[0m  SET time zone 'UTC'
+
+LoadError (Expected /Users/hash4di/projects/budkop/app/helpers/workers_helper.rb to define WorkersHelper):
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:456:in `load_missing_constant'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:114:in `block in constantize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:113:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:113:in `constantize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/core_ext/string/conversions.rb:59:in `constantize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/helpers.rb:132:in `block in modules_for_helpers'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/helpers.rb:127:in `map!'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/helpers.rb:127:in `modules_for_helpers'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/helpers.rb:100:in `modules_for_helpers'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/helpers.rb:91:in `helper'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/base.rb:63:in `inherited'
+  /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:1:in `<top (required)>'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:418:in `load'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:418:in `block in load_file'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:554:in `new_constants_in'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:417:in `load_file'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:313:in `require_or_load'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:455:in `load_missing_constant'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/hash4di/projects/budkop/app/controllers/people_controller.rb:1:in `<top (required)>'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:418:in `load'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:418:in `block in load_file'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:554:in `new_constants_in'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:417:in `load_file'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:313:in `require_or_load'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:455:in `load_missing_constant'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:114:in `block in constantize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:113:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:113:in `constantize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:487:in `block in <class:Reference>'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:497:in `yield'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:497:in `default'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:497:in `get'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:44:in `controller'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:23:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:148:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:89:in `block in recognize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:94:in `optimized_each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:88:in `recognize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:139:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:457:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/plugin/rack.rb:41:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/head.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/flash.rb:177:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/session/abstract_store.rb:106:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/cookies.rb:235:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:31:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:11:in `cache'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:365:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:414:in `_run_call_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/sendfile.rb:105:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/static.rb:33:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 11:42:41 +0200
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.2ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+
+LoadError (Expected /Users/hash4di/projects/budkop/app/helpers/workers_helper.rb to define WorkersHelper):
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:456:in `load_missing_constant'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:114:in `block in constantize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:113:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:113:in `constantize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/core_ext/string/conversions.rb:59:in `constantize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/helpers.rb:132:in `block in modules_for_helpers'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/helpers.rb:127:in `map!'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/helpers.rb:127:in `modules_for_helpers'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/helpers.rb:100:in `modules_for_helpers'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/helpers.rb:91:in `helper'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/base.rb:63:in `inherited'
+  /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:1:in `<top (required)>'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:418:in `load'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:418:in `block in load_file'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:554:in `new_constants_in'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:417:in `load_file'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:313:in `require_or_load'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:455:in `load_missing_constant'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/hash4di/projects/budkop/app/controllers/people_controller.rb:1:in `<top (required)>'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:418:in `load'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:418:in `block in load_file'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:554:in `new_constants_in'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:417:in `load_file'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:313:in `require_or_load'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:455:in `load_missing_constant'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:114:in `block in constantize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:113:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/inflector/methods.rb:113:in `constantize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:487:in `block in <class:Reference>'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:497:in `yield'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:497:in `default'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:497:in `get'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:44:in `controller'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:23:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:148:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:89:in `block in recognize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:94:in `optimized_each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:88:in `recognize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:139:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:457:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/plugin/rack.rb:41:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/head.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/flash.rb:177:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/session/abstract_store.rb:106:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/cookies.rb:235:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:31:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:11:in `cache'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:365:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:414:in `_run_call_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/sendfile.rb:105:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/static.rb:33:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 11:42:58 +0200
+  [1m[35mSQL (0.4ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.1ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'notice'[0m
+  [1m[35mSQL (0.3ms)[0m  SET time zone 'UTC'
+DEPRECATION WARNING: Setting filter_parameter_logging in ActionController is deprecated and has no longer effect, please set 'config.filter_parameters' in config/application.rb instead. (called from <class:ApplicationController> at /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:6)
+  Processing by PeopleController#show as HTML
+Rendered people/show.html.haml within layouts/application (63.1ms)
+Completed   in 68ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Drone):
+    23:       %h4 Who we are?
+    24:       .drone
+    25:         .avatar
+    26:           = image_tag Drone.new(:email => 'h13ronim@gmail.com').gravatar_url
+    27:         .description
+    28:           %dl
+    29:             %dt Designation:
+/Users/hash4di/projects/budkop/app/views/people/show.html.haml:26:in `_render_template__696656150_2176725908_0'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/template.rb:134:in `block in render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/template.rb:126:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:58:in `block in _render_template'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:55:in `_render_template'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:25:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:114:in `_render_template'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:92:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rendering.rb:17:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:39:in `block (2 levels) in render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:39:in `block in render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:77:in `cleanup_view_runtime'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:38:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/implicit_render.rb:4:in `send'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/base.rb:145:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rendering.rb:11:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:438:in `_run__899075781__process_action__690152666__callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:408:in `_run_process_action_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:29:in `block in process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:28:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rescue.rb:8:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/base.rb:114:in `process'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:40:in `process'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal.rb:126:in `dispatch'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal.rb:166:in `block in action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:148:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:89:in `block in recognize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:94:in `optimized_each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:88:in `recognize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:139:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:457:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/plugin/rack.rb:41:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/head.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/flash.rb:177:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/session/abstract_store.rb:106:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/cookies.rb:235:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:31:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:11:in `cache'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:365:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:414:in `_run_call_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/sendfile.rb:105:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/static.rb:33:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 11:44:00 +0200
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (55.6ms)[0m  [1mSET time zone 'UTC'[0m
+DEPRECATION WARNING: Setting filter_parameter_logging in ActionController is deprecated and has no longer effect, please set 'config.filter_parameters' in config/application.rb instead. (called from <class:ApplicationController> at /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:6)
+  Processing by PeopleController#show as HTML
+  [1m[35mSQL (65.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"drones"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+PGError: ERROR:  relation "drones" does not exist
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"drones"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+Rendered people/show.html.haml within layouts/application (96.1ms)
+Completed   in 100ms
+
+ActionView::Template::Error (Expected /Users/hash4di/projects/budkop/app/models/worker.rb to define Worker):
+    23:       %h4 Who we are?
+    24:       .worker
+    25:         .avatar
+    26:           = image_tag Worker.new(:email => 'h13ronim@gmail.com').gravatar_url
+    27:         .description
+    28:           %dl
+    29:             %dt Designation:
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:456:in `load_missing_constant'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:467:in `load_missing_constant'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:467:in `load_missing_constant'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/hash4di/projects/budkop/app/views/people/show.html.haml:26:in `_render_template__696656150_2187258248_0'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/template.rb:134:in `block in render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/template.rb:126:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:58:in `block in _render_template'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:55:in `_render_template'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:25:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:114:in `_render_template'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:92:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rendering.rb:17:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:39:in `block (2 levels) in render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:39:in `block in render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:77:in `cleanup_view_runtime'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:38:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/implicit_render.rb:4:in `send'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/base.rb:145:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rendering.rb:11:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:438:in `_run__899075781__process_action__690152666__callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:408:in `_run_process_action_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:29:in `block in process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:28:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rescue.rb:8:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/base.rb:114:in `process'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:40:in `process'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal.rb:126:in `dispatch'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal.rb:166:in `block in action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:148:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:89:in `block in recognize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:94:in `optimized_each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:88:in `recognize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:139:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:457:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/plugin/rack.rb:41:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/head.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/flash.rb:177:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/session/abstract_store.rb:106:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/cookies.rb:235:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:31:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:11:in `cache'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:365:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:414:in `_run_call_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/sendfile.rb:105:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/static.rb:33:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.3ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 11:44:02 +0200
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.2ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.4ms)[0m  [1mSET time zone 'UTC'[0m
+DEPRECATION WARNING: Setting filter_parameter_logging in ActionController is deprecated and has no longer effect, please set 'config.filter_parameters' in config/application.rb instead. (called from <class:ApplicationController> at /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:6)
+  Processing by PeopleController#show as HTML
+  [1m[35mSQL (1.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"drones"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+PGError: ERROR:  relation "drones" does not exist
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"drones"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+Rendered people/show.html.haml within layouts/application (30.3ms)
+Completed   in 34ms
+
+ActionView::Template::Error (Expected /Users/hash4di/projects/budkop/app/models/worker.rb to define Worker):
+    23:       %h4 Who we are?
+    24:       .worker
+    25:         .avatar
+    26:           = image_tag Worker.new(:email => 'h13ronim@gmail.com').gravatar_url
+    27:         .description
+    28:           %dl
+    29:             %dt Designation:
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:456:in `load_missing_constant'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:467:in `load_missing_constant'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:467:in `load_missing_constant'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:156:in `block in const_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/dependencies.rb:154:in `const_missing'
+  /Users/hash4di/projects/budkop/app/views/people/show.html.haml:26:in `_render_template__696656150_2176613236_0'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/template.rb:134:in `block in render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/template.rb:126:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:58:in `block in _render_template'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:55:in `_render_template'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:25:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:114:in `_render_template'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:92:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rendering.rb:17:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:39:in `block (2 levels) in render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:39:in `block in render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:77:in `cleanup_view_runtime'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:38:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/implicit_render.rb:4:in `send'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/base.rb:145:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rendering.rb:11:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:438:in `_run__899075781__process_action__690152666__callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:408:in `_run_process_action_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:29:in `block in process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:28:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rescue.rb:8:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/base.rb:114:in `process'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:40:in `process'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal.rb:126:in `dispatch'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal.rb:166:in `block in action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:148:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:89:in `block in recognize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:94:in `optimized_each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:88:in `recognize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:139:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:457:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/plugin/rack.rb:41:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/head.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/flash.rb:177:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/session/abstract_store.rb:106:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/cookies.rb:235:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:31:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:11:in `cache'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:365:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:414:in `_run_call_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/sendfile.rb:105:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/static.rb:33:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.1ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 11:44:19 +0200
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+DEPRECATION WARNING: Setting filter_parameter_logging in ActionController is deprecated and has no longer effect, please set 'config.filter_parameters' in config/application.rb instead. (called from <class:ApplicationController> at /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:6)
+  Processing by PeopleController#show as HTML
+  [1m[35mSQL (1.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"workers"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+PGError: ERROR:  relation "workers" does not exist
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"workers"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"workers"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+PGError: ERROR:  relation "workers" does not exist
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"workers"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+Rendered people/show.html.haml within layouts/application (30.6ms)
+Completed   in 34ms
+
+ActionView::Template::Error (PGError: ERROR:  relation "workers" does not exist
+:             SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+              FROM pg_attribute a LEFT JOIN pg_attrdef d
+                ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+             WHERE a.attrelid = '"workers"'::regclass
+               AND a.attnum > 0 AND NOT a.attisdropped
+             ORDER BY a.attnum
+):
+    23:       %h4 Who we are?
+    24:       .worker
+    25:         .avatar
+    26:           = image_tag Worker.new(:email => 'h13ronim@gmail.com').gravatar_url
+    27:         .description
+    28:           %dl
+    29:             %dt Designation:
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract_adapter.rb:210:in `rescue in log'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract_adapter.rb:200:in `log'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/postgresql_adapter.rb:451:in `query'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/postgresql_adapter.rb:1015:in `column_definitions'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/postgresql_adapter.rb:635:in `columns'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/base.rb:758:in `columns'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/persistence.rb:224:in `attributes_from_column_definition'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/locking/optimistic.rb:62:in `attributes_from_column_definition'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/base.rb:1427:in `initialize'
+  /Users/hash4di/projects/budkop/app/views/people/show.html.haml:26:in `new'
+  /Users/hash4di/projects/budkop/app/views/people/show.html.haml:26:in `_render_template__696656150_2186277296_0'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/template.rb:134:in `block in render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/template.rb:126:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:58:in `block in _render_template'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:55:in `_render_template'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_view/render/rendering.rb:25:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:114:in `_render_template'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:92:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rendering.rb:17:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:39:in `block (2 levels) in render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:39:in `block in render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:77:in `cleanup_view_runtime'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:38:in `render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/implicit_render.rb:4:in `send'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/base.rb:145:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rendering.rb:11:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:438:in `_run__899075781__process_action__690152666__callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:408:in `_run_process_action_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/callbacks.rb:17:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:29:in `block in process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/notifications.rb:48:in `instrument'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/instrumentation.rb:28:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rescue.rb:8:in `process_action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/base.rb:114:in `process'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/abstract_controller/rendering.rb:40:in `process'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal.rb:126:in `dispatch'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_controller/metal.rb:166:in `block in action'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:27:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:148:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:89:in `block in recognize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:94:in `optimized_each'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/code_generation.rb:88:in `recognize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-mount-0.6.9/lib/rack/mount/route_set.rb:139:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/routing/route_set.rb:457:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/haml-3.0.13/lib/sass/plugin/rack.rb:41:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/head.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/flash.rb:177:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/session/abstract_store.rb:106:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/cookies.rb:235:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:31:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:11:in `cache'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/query_cache.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activerecord-3.0.0.beta4/lib/active_record/connection_adapters/abstract/connection_pool.rb:365:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:414:in `_run_call_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/callbacks.rb:88:in `run_callbacks'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/sendfile.rb:105:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/static.rb:33:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:48:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (61.2ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (4.3ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+  [1m[36mSQL (5.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  SHOW search_path
+  [1m[36mSQL (2.8ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'schema_migrations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+[0m
+  [1m[35mSQL (2.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_info'
+ 
+[0m
+  [1m[35mSQL (1.3ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+  [1m[36mSQL (2.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateWorkers (20100609052347)
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.8ms)[0m  CREATE TABLE "workers" ("id" serial primary key, "login" character varying(255) NOT NULL, "name" character varying(255) NOT NULL, "surname" character varying(255) NOT NULL, "email" character varying(255) NOT NULL, "description" character varying(255), "crypted_password" character varying(255) NOT NULL, "password_salt" character varying(255) NOT NULL, "persistence_token" character varying(255) NOT NULL, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'workers'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+[0m
+  [1m[35mSQL (1.1ms)[0m  CREATE INDEX "index_workers_on_login" ON "workers" ("login")
+  [1m[36mSQL (1.6ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'workers'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_workers_on_login on workers (0.7ms)[0m   SELECT a.attname, a.attnum
+ FROM pg_attribute a
+ WHERE a.attrelid = 25399
+ AND a.attnum IN (2)
+  [1m[36mSQL (1.2ms)[0m  [1mCREATE INDEX "index_workers_on_persistence_token" ON "workers" ("persistence_token")[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (2.9ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+[0m
+  [1m[35mPK and custom sequence (1.4ms)[0m   SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+  [1m[36mPK and serial sequence (1.9ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+[0m
+  [1m[35mPK and custom sequence (0.9ms)[0m   SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20100609052347')[0m
+  [1m[35mPK and serial sequence (2.0ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+  [1m[36mPK and custom sequence (0.9ms)[0m  [1m SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+[0m
+  [1m[35mSQL (1.4ms)[0m  COMMIT
+Migrating to CreateWorkerSessions (20100612060334)
+  [1m[36mSQL (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.0ms)[0m  CREATE TABLE "sessions" ("id" serial primary key, "session_id" character varying(255) NOT NULL, "data" text, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'sessions'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+[0m
+  [1m[35mSQL (1.2ms)[0m  CREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'sessions'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_sessions_on_session_id on sessions (0.2ms)[0m   SELECT a.attname, a.attnum
+ FROM pg_attribute a
+ WHERE a.attrelid = 25412
+ AND a.attnum IN (2)
+  [1m[36mSQL (1.5ms)[0m  [1mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [1m[35mSQL (1.0ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (2.0ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+[0m
+  [1m[35mPK and custom sequence (1.0ms)[0m   SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20100612060334')[0m
+  [1m[35mPK and serial sequence (2.2ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+  [1m[36mPK and custom sequence (1.0ms)[0m  [1m SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+[0m
+  [1m[35mSQL (0.7ms)[0m  COMMIT
+Migrating to CreateTags (20100612084942)
+  [1m[36mSQL (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.3ms)[0m  CREATE TABLE "tags" ("id" serial primary key, "worker_id" integer, "name" character varying(255), "url" character varying(255), "title" character varying(255), "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mPK and serial sequence (2.1ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+  [1m[36mPK and custom sequence (1.0ms)[0m  [1m SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100612084942')
+  [1m[36mPK and serial sequence (1.9ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+[0m
+  [1m[35mPK and custom sequence (0.9ms)[0m   SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+  [1m[36mSQL (1.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateContacts (20100705150935)
+  [1m[35mSQL (2.4ms)[0m  BEGIN
+  [1m[36mSQL (5.0ms)[0m  [1mCREATE TABLE "contacts" ("id" serial primary key, "name" character varying(255) NOT NULL, "email" character varying(255) NOT NULL, "message" text NOT NULL, "ip_address" character varying(255) NOT NULL, "browser" character varying(255) NOT NULL, "email_sent" boolean, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.6ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (1.9ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+[0m
+  [1m[35mPK and custom sequence (0.9ms)[0m   SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20100705150935')[0m
+  [1m[35mPK and serial sequence (1.8ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"schema_migrations"'::regclass
+  [1m[36mPK and custom sequence (0.9ms)[0m  [1m SELECT attr.attname,
+ CASE
+ WHEN split_part(def.adsrc, '''', 2) ~ '.' THEN
+ substr(split_part(def.adsrc, '''', 2),
+ strpos(split_part(def.adsrc, '''', 2), '.')+1)
+ ELSE split_part(def.adsrc, '''', 2)
+ END
+ FROM pg_class t
+ JOIN pg_attribute attr ON (t.oid = attrelid)
+ JOIN pg_attrdef def ON (adrelid = attrelid AND adnum = attnum)
+ JOIN pg_constraint cons ON (conrelid = adrelid AND adnum = conkey[1])
+ WHERE t.oid = '"schema_migrations"'::regclass
+ AND cons.contype = 'p'
+ AND def.adsrc ~* 'nextval'
+[0m
+  [1m[35mSQL (0.8ms)[0m  COMMIT
+  [1m[36mSQL (1.5ms)[0m  [1m SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.7ms)[0m   SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+  [1m[36mSQL (1.0ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"contacts"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mPK and serial sequence (2.4ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"contacts"'::regclass
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'contacts'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"sessions"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (2.0ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"sessions"'::regclass
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'sessions'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+  [1m[36mColumns for index index_sessions_on_session_id on sessions (0.2ms)[0m  [1m SELECT a.attname, a.attnum
+ FROM pg_attribute a
+ WHERE a.attrelid = 25412
+ AND a.attnum IN (2)
+[0m
+  [1m[35mColumns for index index_sessions_on_updated_at on sessions (0.2ms)[0m   SELECT a.attname, a.attnum
+ FROM pg_attribute a
+ WHERE a.attrelid = 25412
+ AND a.attnum IN (5)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"tags"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mPK and serial sequence (1.8ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"tags"'::regclass
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'tags'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"workers"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (1.8ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"workers"'::regclass
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'workers'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+  [1m[36mColumns for index index_workers_on_login on workers (0.2ms)[0m  [1m SELECT a.attname, a.attnum
+ FROM pg_attribute a
+ WHERE a.attrelid = 25399
+ AND a.attnum IN (2)
+[0m
+  [1m[35mColumns for index index_workers_on_persistence_token on workers (0.2ms)[0m   SELECT a.attname, a.attnum
+ FROM pg_attribute a
+ WHERE a.attrelid = 25399
+ AND a.attnum IN (9)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 11:45:30 +0200
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+DEPRECATION WARNING: Setting filter_parameter_logging in ActionController is deprecated and has no longer effect, please set 'config.filter_parameters' in config/application.rb instead. (called from <class:ApplicationController> at /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:6)
+  Processing by PeopleController#show as HTML
+  [1m[35mSQL (4.3ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"workers"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered layouts/_header.html.haml (3.3ms)
+Rendered layouts/_footer.html.haml (1.2ms)
+Rendered people/show.html.haml within layouts/application (96.2ms)
+Completed 200 OK in 101ms (Views: 100.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 11:45:32 +0200
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+DEPRECATION WARNING: Setting filter_parameter_logging in ActionController is deprecated and has no longer effect, please set 'config.filter_parameters' in config/application.rb instead. (called from <class:ApplicationController> at /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:6)
+  Processing by PeopleController#show as HTML
+  [1m[35mSQL (3.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"workers"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered layouts/_header.html.haml (3.3ms)
+Rendered layouts/_footer.html.haml (1.2ms)
+Rendered people/show.html.haml within layouts/application (69.7ms)
+Completed 200 OK in 74ms (Views: 73.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 11:45:32 +0200
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+DEPRECATION WARNING: Setting filter_parameter_logging in ActionController is deprecated and has no longer effect, please set 'config.filter_parameters' in config/application.rb instead. (called from <class:ApplicationController> at /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:6)
+  Processing by PeopleController#show as HTML
+  [1m[35mSQL (3.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"workers"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered layouts/_header.html.haml (3.1ms)
+Rendered layouts/_footer.html.haml (1.1ms)
+Rendered people/show.html.haml within layouts/application (67.1ms)
+Completed 200 OK in 71ms (Views: 70.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stylesheets/grid.css" for 127.0.0.1 at 2010-08-11 11:45:32 +0200
+
+
+Started GET "/stylesheets/text.css" for 127.0.0.1 at 2010-08-11 11:45:33 +0200
+
+
+Started GET "/stylesheets/compass/reset.css" for 127.0.0.1 at 2010-08-11 11:45:33 +0200
+
+ActionController::RoutingError (No route matches "/stylesheets/compass/reset.css"):
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-11 11:46:12 +0200
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+DEPRECATION WARNING: Setting filter_parameter_logging in ActionController is deprecated and has no longer effect, please set 'config.filter_parameters' in config/application.rb instead. (called from <class:ApplicationController> at /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:6)
+  Processing by PeopleController#show as HTML
+  [1m[35mSQL (3.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"workers"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered layouts/_header.html.haml (3.5ms)
+Rendered layouts/_footer.html.haml (1.2ms)
+Rendered people/show.html.haml within layouts/application (76.4ms)
+Completed 200 OK in 81ms (Views: 80.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stylesheets/grid.css" for 127.0.0.1 at 2010-08-11 11:46:13 +0200
+
+
+Started GET "/stylesheets/text.css" for 127.0.0.1 at 2010-08-11 11:46:13 +0200
+
+
+Started GET "/stylesheets/compass/reset.css" for 127.0.0.1 at 2010-08-11 11:46:13 +0200
+
+ActionController::RoutingError (No route matches "/stylesheets/compass/reset.css"):
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2010-08-11 11:46:15 +0200
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+DEPRECATION WARNING: Setting filter_parameter_logging in ActionController is deprecated and has no longer effect, please set 'config.filter_parameters' in config/application.rb instead. (called from <class:ApplicationController> at /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:6)
+  Processing by PeopleController#show as HTML
+  [1m[35mSQL (3.4ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"workers"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered layouts/_header.html.haml (61.1ms)
+Rendered layouts/_footer.html.haml (1.4ms)
+Rendered people/show.html.haml within layouts/application (128.0ms)
+Completed 200 OK in 132ms (Views: 131.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stylesheets/compass/reset.css" for 127.0.0.1 at 2010-08-11 11:46:15 +0200
+
+ActionController::RoutingError (No route matches "/stylesheets/compass/reset.css"):
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2010-08-11 11:46:17 +0200
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+DEPRECATION WARNING: Setting filter_parameter_logging in ActionController is deprecated and has no longer effect, please set 'config.filter_parameters' in config/application.rb instead. (called from <class:ApplicationController> at /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:6)
+  Processing by ServicesController#show as HTML
+Rendered layouts/_header.html.haml (3.6ms)
+Rendered layouts/_footer.html.haml (1.2ms)
+Rendered services/show.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stylesheets/compass/reset.css" for 127.0.0.1 at 2010-08-11 11:46:17 +0200
+
+ActionController::RoutingError (No route matches "/stylesheets/compass/reset.css"):
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/technology" for 127.0.0.1 at 2010-08-11 11:46:18 +0200
+  [1m[35mSQL (0.4ms)[0m  SHOW client_min_messages
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'panic'[0m
+  [1m[35mSQL (0.1ms)[0m  SET standard_conforming_strings = on
+  [1m[36mSQL (0.1ms)[0m  [1mSET client_min_messages TO 'notice'[0m
+  [1m[35mSQL (0.3ms)[0m  SET time zone 'UTC'
+DEPRECATION WARNING: Setting filter_parameter_logging in ActionController is deprecated and has no longer effect, please set 'config.filter_parameters' in config/application.rb instead. (called from <class:ApplicationController> at /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:6)
+  Processing by TechnologyController#show as HTML
+  [1m[36mSQL (4.6ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mTag Load (0.6ms)[0m  SELECT "tags".* FROM "tags"
+Rendered layouts/_header.html.haml (3.3ms)
+Rendered layouts/_footer.html.haml (1.2ms)
+Rendered technology/show.html.haml within layouts/application (200.3ms)
+Completed 200 OK in 205ms (Views: 203.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/stylesheets/compass/reset.css" for 127.0.0.1 at 2010-08-11 11:46:19 +0200
+
+ActionController::RoutingError (No route matches "/stylesheets/compass/reset.css"):
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/contact_us" for 127.0.0.1 at 2010-08-11 11:46:20 +0200
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+DEPRECATION WARNING: Setting filter_parameter_logging in ActionController is deprecated and has no longer effect, please set 'config.filter_parameters' in config/application.rb instead. (called from <class:ApplicationController> at /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:6)
+  Processing by ContactUsController#show as HTML
+  [1m[35mSQL (3.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"contacts"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+DEPRECATION WARNING: f.error_message_on was removed from Rails and is now available as a plugin. Please install it with `rails plugin install git://github.com/rails/dynamic_form.git`. (called from block in _render_template_871338134_2174183088_0 at /Users/hash4di/projects/budkop/app/views/contact_us/show.html.haml:36)
+DEPRECATION WARNING: f.error_message_on was removed from Rails and is now available as a plugin. Please install it with `rails plugin install git://github.com/rails/dynamic_form.git`. (called from block in _render_template_871338134_2174183088_0 at /Users/hash4di/projects/budkop/app/views/contact_us/show.html.haml:40)
+DEPRECATION WARNING: f.error_message_on was removed from Rails and is now available as a plugin. Please install it with `rails plugin install git://github.com/rails/dynamic_form.git`. (called from block in _render_template_871338134_2174183088_0 at /Users/hash4di/projects/budkop/app/views/contact_us/show.html.haml:44)
+DEPRECATION WARNING: - style block helpers are deprecated. Please use =. (called from _render_template_871338134_2174183088_0 at /Users/hash4di/projects/budkop/app/views/contact_us/show.html.haml:32)
+Rendered layouts/_header.html.haml (4.2ms)
+Rendered layouts/_footer.html.haml (1.3ms)
+Rendered contact_us/show.html.haml within layouts/application (101.7ms)
+Completed 200 OK in 126ms (Views: 105.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stylesheets/compass/reset.css" for 127.0.0.1 at 2010-08-11 11:46:20 +0200
+
+ActionController::RoutingError (No route matches "/stylesheets/compass/reset.css"):
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2010-08-11 11:46:21 +0200
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+DEPRECATION WARNING: Setting filter_parameter_logging in ActionController is deprecated and has no longer effect, please set 'config.filter_parameters' in config/application.rb instead. (called from <class:ApplicationController> at /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:6)
+  Processing by PeopleController#show as HTML
+  [1m[35mSQL (3.7ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"workers"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered layouts/_header.html.haml (3.5ms)
+Rendered layouts/_footer.html.haml (1.2ms)
+Rendered people/show.html.haml within layouts/application (68.8ms)
+Completed 200 OK in 73ms (Views: 72.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stylesheets/compass/reset.css" for 127.0.0.1 at 2010-08-11 11:46:22 +0200
+
+ActionController::RoutingError (No route matches "/stylesheets/compass/reset.css"):
+/Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)

@@ -1,3 +1,3 @@
-module DroneSessionsHelper
+module WorkerSessionsHelper
 end
 
