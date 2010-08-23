@@ -1,4 +1,4 @@
-BudKop::Application.routes.draw do |map|
+BudKop::Application.routes.draw do
   resources :contacts, :actions => [:create, :index]
   resource :worker
   resource :worker_session

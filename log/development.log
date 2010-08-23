@@ -6799,3 +6799,233 @@ ActionController::RoutingError (No route matches "/stylesheets/compass/reset.css
   /Users/hash4di/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
 
 Rendered /Users/hash4di/.rvm/gems/ruby-1.9.1-p378/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-08-23 12:52:22 +0200
+  [1m[36mSQL (33.6ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.2ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (80.9ms)[0m  [1mSET time zone 'UTC'[0m
+DEPRECATION WARNING: Setting filter_parameter_logging in ActionController is deprecated and has no longer effect, please set 'config.filter_parameters' in config/application.rb instead. (called from <class:ApplicationController> at /Users/hash4di/projects/budkop/app/controllers/application_controller.rb:6)
+  Processing by PeopleController#show as HTML
+  [1m[35mSQL (314.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"workers"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+Rendered layouts/_header.html.haml (3.3ms)
+Rendered layouts/_footer.html.haml (1.4ms)
+Rendered people/show.html.haml within layouts/application (652.4ms)
+Completed 200 OK in 672ms (Views: 671.8ms | ActiveRecord: 81.3ms)
+
+
+Started GET "/stylesheets/grid.css" for 127.0.0.1 at 2010-08-23 12:52:25 +0200
+
+
+Started GET "/stylesheets/text.css" for 127.0.0.1 at 2010-08-23 12:52:25 +0200
+
+
+Started GET "/stylesheets/compass/reset.css" for 127.0.0.1 at 2010-08-23 12:52:26 +0200
+
+ActionController::RoutingError (No route matches "/stylesheets/compass/reset.css"):
+/Users/hash4di/.rvm/gems/ruby-1.9.2-preview3/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/show_exceptions.rb:55:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.2-preview3/gems/railties-3.0.0.beta4/lib/rails/rack/logger.rb:14:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.2-preview3/gems/rack-1.1.0/lib/rack/runtime.rb:17:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.2-preview3/gems/activesupport-3.0.0.beta4/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.2-preview3/gems/rack-1.1.0/lib/rack/lock.rb:11:in `block in call'
+  <internal:prelude>:10:in `synchronize'
+  /Users/hash4di/.rvm/gems/ruby-1.9.2-preview3/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.2-preview3/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/static.rb:30:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.2-preview3/gems/railties-3.0.0.beta4/lib/rails/application.rb:145:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.2-preview3/gems/railties-3.0.0.beta4/lib/rails/application.rb:81:in `method_missing'
+  /Users/hash4di/.rvm/gems/ruby-1.9.2-preview3/gems/railties-3.0.0.beta4/lib/rails/rack/log_tailer.rb:15:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.2-preview3/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+  /Users/hash4di/.rvm/gems/ruby-1.9.2-preview3/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.2-preview3/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.2-preview3/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/hash4di/.rvm/rubies/ruby-1.9.2-preview3/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered /Users/hash4di/.rvm/gems/ruby-1.9.2-preview3/gems/actionpack-3.0.0.beta4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW client_min_messages[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'panic'
+  [1m[36mSQL (0.1ms)[0m  [1mSET standard_conforming_strings = on[0m
+  [1m[35mSQL (0.1ms)[0m  SET client_min_messages TO 'notice'
+  [1m[36mSQL (0.3ms)[0m  [1mSET time zone 'UTC'[0m
+  [1m[35mSQL (170.0ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+  [1m[36mSQL (29.0ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (3.2ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mSQL (14.7ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateWorkers (20100609052347)
+Migrating to CreateWorkerSessions (20100612060334)
+Migrating to CreateTags (20100612084942)
+Migrating to CreateContacts (20100705150935)
+  [1m[35mSQL (0.7ms)[0m   SELECT COUNT(*)
+ FROM pg_tables
+ WHERE tablename = 'schema_migrations'
+ 
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"schema_migrations"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT tablename
+ FROM pg_tables
+ WHERE schemaname = ANY (current_schemas(false))
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"contacts"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (38.8ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"contacts"'::regclass
+[0m
+  [1m[35mSQL (0.1ms)[0m  SHOW search_path
+  [1m[36mSQL (32.8ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'contacts'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+[0m
+  [1m[35mSQL (0.8ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"sessions"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (2.1ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"sessions"'::regclass
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'sessions'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+  [1m[36mColumns for index index_sessions_on_session_id on sessions (0.3ms)[0m  [1m SELECT a.attname, a.attnum
+ FROM pg_attribute a
+ WHERE a.attrelid = 25412
+ AND a.attnum IN (2)
+[0m
+  [1m[35mColumns for index index_sessions_on_updated_at on sessions (0.2ms)[0m   SELECT a.attname, a.attnum
+ FROM pg_attribute a
+ WHERE a.attrelid = 25412
+ AND a.attnum IN (5)
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"tags"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+[0m
+  [1m[35mPK and serial sequence (2.4ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"tags"'::regclass
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'tags'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+[0m
+  [1m[35mSQL (0.5ms)[0m   SELECT a.attname, format_type(a.atttypid, a.atttypmod), d.adsrc, a.attnotnull
+ FROM pg_attribute a LEFT JOIN pg_attrdef d
+ ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+ WHERE a.attrelid = '"workers"'::regclass
+ AND a.attnum > 0 AND NOT a.attisdropped
+ ORDER BY a.attnum
+  [1m[36mPK and serial sequence (2.1ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"workers"'::regclass
+[0m
+  [1m[35mSQL (0.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, t.oid
+ FROM pg_class t, pg_class i, pg_index d
+ WHERE i.relkind = 'i'
+ AND d.indexrelid = i.oid
+ AND d.indisprimary = 'f'
+ AND t.oid = d.indrelid
+ AND t.relname = 'workers'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname IN ('"$user"','public') )
+ ORDER BY i.relname
+  [1m[36mColumns for index index_workers_on_login on workers (0.2ms)[0m  [1m SELECT a.attname, a.attnum
+ FROM pg_attribute a
+ WHERE a.attrelid = 25399
+ AND a.attnum IN (2)
+[0m
+  [1m[35mColumns for index index_workers_on_persistence_token on workers (0.2ms)[0m   SELECT a.attname, a.attnum
+ FROM pg_attribute a
+ WHERE a.attrelid = 25399
+ AND a.attnum IN (9)
