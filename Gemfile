@@ -6,7 +6,7 @@ gem 'heroku', '1.9.9'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+gem 'pg', '0.9.0'
 gem 'haml', '3.0.13'
 gem 'gravtastic', '2.2.0'
 gem 'authlogic', :git => "git://github.com/odorcicd/authlogic.git", :branch => 'rails3'
