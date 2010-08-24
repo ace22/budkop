@@ -1,13 +1,14 @@
 source 'http://rubygems.org'
 
-gem 'rails', "3.0.0.rc"
+gem 'rails', '3.0.0.rc'
 gem 'heroku', '1.9.9'
+gem 'bundler', '1.0.0.rc.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg', '0.9.0'
-gem 'haml', '3.0.13'
+gem 'haml', '3.0.17'
 gem 'gravtastic', '2.2.0'
 gem 'authlogic', :git => "git://github.com/odorcicd/authlogic.git", :branch => 'rails3'
 gem 'compass', '0.10.2'
@@ -30,3 +31,4 @@ group :test do
   gem 'rspec-rails', '2.0.0.beta.10'
   gem 'autotest-growl', '0.2.4'
 end
+
