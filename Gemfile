@@ -10,7 +10,7 @@ gem 'bundler', '1.0.0.rc.6'
 gem 'pg', '0.9.0'
 gem 'haml', '3.0.17'
 gem 'gravtastic', '2.2.0'
-gem 'authlogic', :git => "git://github.com/odorcicd/authlogic.git", :branch => 'rails3'
+# gem 'authlogic', :git => "git://github.com/odorcicd/authlogic.git", :branch => 'rails3'
 gem 'compass', '0.10.2'
 gem 'compass-960-plugin', '0.10.0.beta.0', :require => 'ninesixty'
 

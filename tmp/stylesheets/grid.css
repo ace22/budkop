@@ -1484,7 +1484,7 @@
 #people .grid_2 {
   width: 140px;
 }
-/* line 36, ../../app/stylesheets/960/grid.sass */
+/* line 36, ../../app/stylesheets/960/grid.sass */Worker.create(:image_url => '/images/1.jpg', :name => 'szkic', :description => 'szkic czegos tam')
 #people .grid_3 {
   width: 220px;
 }
@@ -1749,7 +1749,7 @@
   margin-right: 0;
 }
 /* line 14, ../../app/stylesheets/grid/people.sass */
-#people #content #details .worker .avatar {
+#people #content #details .worker .image {
   display: inline;
   float: left;
   margin-left: 10px;
