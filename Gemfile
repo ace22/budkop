@@ -2,7 +2,6 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.0.rc'
 gem 'heroku', '1.9.9'
-gem 'bundler', '1.0.0.rc.5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
